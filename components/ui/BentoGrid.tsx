@@ -142,7 +142,13 @@ export const BentoGridItem = ({
                     </div>
                   </div>
                 )} 
-
+                {id ===5 && (
+                  <div className="mt-5 relative">
+                    <a className=" -bottom-5 left-0 min-h-[20px] min-w-[100px] relative inline-block px-8 py-4 text-white font-bold text-lg transition-all duration-300 
+                     bg-gradient-to-r from-purple-600 to-indigo-600 rounded-lg shadow-lg outline-white-100 
+                     hover:text-purple-600 hover:shadow-2xl focus:outline-none" href="https://mirza-portfolio-game.vercel.app/">Check it out!</a>
+                  </div>
+                )}
               {id === 6 && (
                 <div className="mt-5 relative">
                   <div className={`absolute -bottom-5 right-0`}>

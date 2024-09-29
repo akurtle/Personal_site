@@ -50,12 +50,12 @@ export const navItems = [
   
     {
       id: 5,
-      title: "Currently developing an app to gamify learning",
-      description: "Ongoing project",
+      title: "Check out my portfolio through a game!",
+      description: "Made using Kaboomjs",
       className: "md:col-span-3 md:row-span-2 ",
-      imgClassName: "absolute right-0 -bottom-5 md:w-96 w-60 rounded-full hidden lg:block",
+      imgClassName: "absolute right-2 bottom-11 md:w-96 w-60 rounded-full hidden lg:block",
       titleClassName: "justify-center md:justify-start lg:justify-center",
-      img: "/chessking.jpg",
+      img: "/portfolio-game.png",
       spareImg: "/grid.svg",
     },
     {
