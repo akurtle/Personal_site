@@ -164,7 +164,7 @@ export const navItems = [
         
         {
           title:"COMP 2007",
-          description:"Learned problem solving techniques via fundamental DSA, basic design techniques and analysis",
+          description:"Learned concepts in DB systems and information management, and how to analyze situations where data needs to be stored",
           link:"https://www.mun.ca/computerscience/undergraduates/courses/comp-2007-introduction-to-information-management/"
         },
         {
