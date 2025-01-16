@@ -87,7 +87,7 @@ export const navItems = [
       img: "/personalPage.png",
       imgClassName:"scale-125 rounded-lg",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg","/framer-motion.svg","/sentry-3.svg"],
-      link: "https://github.com/adrianhajdin/zoom-clone",
+      link: "https://github.com/akurtle/Personal_site",
     },
     {
       id: 3,
