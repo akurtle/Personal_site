@@ -19,7 +19,7 @@ export const navItems = [
     },
     {
       id: 2,
-      title: "Looking for an Internship for winter 2025",
+      title: "Looking for a job , Graduating August 2025",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
