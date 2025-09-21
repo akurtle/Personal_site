@@ -73,12 +73,12 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
-      title: "Sodoku Solver",
-      des: "Solve sodoku puzzles and check out the sodoku solver that solves the puzzle using genetic algorithms",
-      img: "/sodokuPage.jpg",
-      imgClassName:"scale-50 rounded-xl",
-      iconLists: ["/html-1.svg","/logo-javascript.svg","/css-3.svg"],
-      link: "https://akurtle.github.io/Sodoku/",
+      title: "Auto Emailer",
+      des: "A web app and a browser extension that automates email replies using the Gemini Model",
+      img: "/auto_emailer.png",
+      imgClassName:"scale-100 rounded-xl",
+      iconLists: ["./spring-boot.svg","./re.svg","./mui.svg","./aws.svg","./tail.svg","/framer-motion.svg"],
+      link: "https://github.com/akurtle/auto-emailer",
     },
     {
       id: 2,
@@ -91,12 +91,12 @@ export const navItems = [
     },
     {
       id: 3,
-      title: "Cant Stop",
-      des: "A board game developed as a group project involving Java SWING Components",
-      img: "/p3.png",
-      imgClassName:"scale-50 rounded-xl",
-      iconLists: ["/java.svg"],
-      link: "https://github.com/akurtle/CantStop",
+      title: "Trail Mark",
+      des: "An app developed in flutter in which users can mark trails and share them with others.",
+      img: "/TrailMark.png",
+      imgClassName:"scale-60 rounded-xl",
+      iconLists: ["/flutter.svg", "/firebase.svg", "/google-maps.svg"],
+      link: "https://github.com/akurtle/TrailMark",
     },
     {
       id: 4,
