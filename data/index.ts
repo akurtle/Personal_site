@@ -133,7 +133,7 @@ export const navItems = [
       desc: "Built a 2D Space themed game for the Johnson Geo Center, the game was built for an ipad.",
       date:"July 2025 - Aug 2025",
       className: "md:col-span-2",
-      thumbnail: "/exp2.svg",
+      thumbnail: "/exp3.svg",
       }
       
   ];
