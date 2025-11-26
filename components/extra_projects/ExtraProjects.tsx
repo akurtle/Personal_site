@@ -1,18 +1,19 @@
-import { projects } from '@/data'
 import React from 'react'
-import { PinContainer } from './ui/3d-pin'
-import { FaLocationArrow } from 'react-icons/fa'
-import MagicButton from './ui/MagicButton'
 
-const RecentProjects = () => {
+import { FaLocationArrow } from 'react-icons/fa'
+import { all_projects, projects } from '@/data'
+import { PinContainer } from '../ui/3d-pin'
+
+function ExtraProjects() {
     return (
-        <div className='py-20' id='projects'>
-            <h1 className='heading'>
+        <div className='pt-20 bg-black' id='more_projects'>
+             <h1 className='heading z-50 relative'>
                 A small selection of {''}
                 <span className='text-purple'>recent projects</span>
             </h1>
             <div className='flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10'>
-                {projects.map(({
+               
+                {all_projects.map(({
                     id,
                     title,
                     des,
@@ -60,17 +61,10 @@ const RecentProjects = () => {
                         </PinContainer>
                     </div>
                 ))}
-                {/* <a href='/more_projects' >
-                    <MagicButton
-                        
-                        icon={<FaLocationArrow />}
-                        title="Check out more projects"
-                        position='right' />
 
-                </a> */}
             </div>
-        </div> 
+        </div>
     )
 }
 
-export default RecentProjects
+export default ExtraProjects

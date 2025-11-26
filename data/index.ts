@@ -9,12 +9,12 @@ export const navItems = [
   export const gridItems = [
     {
       id: 1,
-      title: "Interested in various areas of Computer Science such as Full Stack,Cybersecurity and Data Science",
-      description: "",
+      title: "Check my Gazette post!",
+      description: "Created a game using Unity (C#) for Johnson Geo Centre",
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-      imgClassName: "w-full h-full object-cover",
+      imgClassName: "w-full h-full ",
       titleClassName: "justify-end",
-      img: "/b1.svg",
+      img: "/myImage.webp",
       spareImg: "",
     },
     {
@@ -39,8 +39,8 @@ export const navItems = [
     },
     {
       id: 4,
-      title: "Tech enthusiast with a passion for development.",
-      description: "Always learning!",
+      title: "Interested in various areas of Computer Science",
+      description: "Full Stack,Cybersecurity and Data Science",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
       titleClassName: "justify-start",
@@ -108,6 +108,81 @@ export const navItems = [
       link: "https://github.com/akurtle/E-commerce-Site",
     },
   ];
+
+    export const all_projects = [
+    {
+      id: 1,
+      title: "Auto Emailer",
+      des: "A web app and a browser extension that automates email replies using the Gemini Model",
+      img: "/auto_emailer.png",
+      imgClassName:"scale-100 rounded-xl",
+      iconLists: ["./spring-boot.svg","./re.svg","./mui.svg","./aws.svg","./tail.svg","/framer-motion.svg"],
+      link: "https://github.com/akurtle/auto-emailer",
+    },
+    {
+      id: 2,
+      title: "Personal Site",
+      des: "Created a personal site with modern UI for effective display of personal achievements, and monitoring user response.",
+      img: "/personalPage.png",
+      imgClassName:"scale-125 rounded-lg",
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg","/framer-motion.svg","/sentry-3.svg"],
+      link: "https://github.com/akurtle/Personal_site",
+    },
+    {
+      id: 3,
+      title: "Trail Mark",
+      des: "An app developed in flutter in which users can mark trails and share them with others.",
+      img: "/TrailMark.png",
+      imgClassName:"scale-60 rounded-xl",
+      iconLists: ["/flutter.svg", "/firebase.svg", "/google-maps.svg"],
+      link: "https://github.com/akurtle/TrailMark",
+    },
+    {
+      id: 4,
+      title: "Tech Cart",
+      des: "Created a an Ecommerce tech site along with a payment system using NextJS, Stripe and SANITY",
+      img: "/p4.png",
+      imgClassName:"",
+      iconLists: ["/next.svg", "/stripe.svg", "/sanity.png"],
+      link: "https://e-commerce-site-flame.vercel.app/",
+    },
+        {
+      id: 5,
+      title: "Satellite visualizer",
+      des: "A satellite visualizer that uses react, leaflet and parses tle urls! ",
+      img: "/satellite-vis.png",
+      imgClassName:"scale-100 rounded-xl",
+      iconLists: ["/ts.svg","./re.svg","/leaflet_icon.png"],
+      link: "https://satellite-vis.vercel.app/",
+    },
+    {
+      id: 6,
+      title: "Personal Site",
+      des: "Created a personal site with modern UI for effective display of personal achievements, and monitoring user response.",
+      img: "/personalPage.png",
+      imgClassName:"scale-125 rounded-lg",
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg","/framer-motion.svg","/sentry-3.svg"],
+      link: "https://github.com/akurtle/Personal_site",
+    },
+    {
+      id: 7,
+      title: "Trail Mark",
+      des: "An app developed in flutter in which users can mark trails and share them with others.",
+      img: "/TrailMark.png",
+      imgClassName:"scale-60 rounded-xl",
+      iconLists: ["/flutter.svg", "/firebase.svg", "/google-maps.svg"],
+      link: "https://github.com/akurtle/TrailMark",
+    },
+    {
+      id: 8,
+      title: "Tech Cart",
+      des: "Created a an Ecommerce tech site along with a payment system using NextJS, Stripe and SANITY",
+      img: "/p4.png",
+      imgClassName:"",
+      iconLists: ["/next.svg", "/stripe.svg", "/sanity.png"],
+      link: "https://github.com/akurtle/E-commerce-Site",
+    },
+  ];
   
   
   export const workExperience = [
@@ -133,7 +208,7 @@ export const navItems = [
       desc: "Built a 2D Space themed game for the Johnson Geo Center, the game was built for an ipad.",
       date:"July 2025 - Aug 2025",
       className: "md:col-span-2",
-      thumbnail: "/exp2.svg",
+      thumbnail: "/exp3.svg",
       }
       
   ];
