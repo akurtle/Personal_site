@@ -189,28 +189,33 @@ export const navItems = [
     {
       id: 1,
       title: "Cyber Security Intern",
+      company: "Fortinet & ZScaler workshops",
       desc: "Learned the basics of Cyber security and how various cyber security products work. Attended workshops on Fortinet and ZScaler products.",
-      date:"July 2023 - Sept 2023",
+      date: "Jul 2023 – Sep 2023",
+      tag: "Security",
       className: "md:col-span-2",
       thumbnail: "/exp1.svg",
     },
     {
       id: 2,
       title: "UI Developer Intern",
-      desc: "Supported multiple projects using HTML,CSS ,JS ,Jquery and SCSS to create responsive web pages.",
-      date:"July 2024 - Sept 2024",
+      company: "Web Development",
+      desc: "Supported multiple projects using HTML, CSS, JS, jQuery and SCSS to create responsive web pages.",
+      date: "Jul 2024 – Sep 2024",
+      tag: "Frontend",
       className: "md:col-span-2",
       thumbnail: "/exp2.svg",
     },
-      {
+    {
       id: 3,
       title: "Game Developer",
-      desc: "Built a 2D Space themed game for the Johnson Geo Center, the game was built for an ipad.",
-      date:"July 2025 - Aug 2025",
+      company: "Johnson Geo Center",
+      desc: "Built a 2D space-themed game for the Johnson Geo Center, designed and shipped for iPad.",
+      date: "Jul 2025 – Aug 2025",
+      tag: "Games",
       className: "md:col-span-2",
       thumbnail: "/exp3.svg",
-      }
-      
+    },
   ];
 
   export const education=[
