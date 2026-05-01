@@ -155,7 +155,7 @@ const Grid = () => {
             marginTop: "24px",
             borderRadius: "12px",
             overflow: "hidden",
-            border: "1px solid rgba(255,255,255,0.07)",
+            // border: "1px solid rgba(255,255,255,0.07)",
             backgroundImage: "url('/UbuntuMain.png')",
             backgroundSize: "cover",
             backgroundPosition: "left center",
@@ -165,7 +165,7 @@ const Grid = () => {
           <div
             style={{
               background: "rgba(20,20,20,0.92)",
-              backdropFilter: "blur(4px)",
+              backdropFilter: "blur(10px)",
               padding: "5px 16px",
               display: "flex",
               justifyContent: "space-between",
@@ -181,7 +181,7 @@ const Grid = () => {
           </div>
 
           {/* Desktop area */}
-          <div style={{ padding: "24px 32px 32px", display: "flex", justifyContent: "center" }}>
+          <div style={{ padding: "0px 300px 30px", display: "flex", justifyContent: "center" }}>
             {/* Linux window chrome */}
             <div
               style={{
