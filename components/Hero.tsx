@@ -44,7 +44,7 @@ const Hero = () => {
         </h1>
 
         <p className="hero-subtitle">
-          <span className="comment">// </span>
+          <span className="comment">{"// "}</span>
           <span className="accent">an aspiring software developer</span>
         </p>
 

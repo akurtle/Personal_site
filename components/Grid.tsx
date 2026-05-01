@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 
 const STACK = [
   { label: "React",      cls: "chip-green"  },
@@ -44,10 +45,11 @@ const Grid = () => {
           {/* Photo */}
           <div className="bento-card bc-photo">
             <div className="photo-wrap">
-              <img
+              <Image
                 src="/myImage.webp"
                 alt="Mirza Yousuf"
-                style={{ objectPosition: "left center" }}
+                fill
+                style={{ objectFit: "cover", objectPosition: "left center", filter: "grayscale(20%) contrast(1.05)" }}
               />
               <div className="photo-overlay">
                 <p className="photo-name">Mirza Yousuf</p>
@@ -70,13 +72,13 @@ const Grid = () => {
               {" = {"}
               <br />
               {"  "}
-              <span className="str">"graduated"</span>
+              <span className="str">&quot;graduated&quot;</span>
               {": "}
-              <span className="str">"Aug 2025"</span>
+              <span className="str">&quot;Aug 2025&quot;</span>
               {","}
               <br />
               {"  "}
-              <span className="str">"openToWork"</span>
+              <span className="str">&quot;openToWork&quot;</span>
               {": "}
               <span className="kw">true</span>
               <br />
@@ -233,7 +235,7 @@ const Grid = () => {
                     }}
                   >
                     <p style={{ fontFamily: "var(--mono)", fontSize: "13px", color: "var(--text2)", margin: 0 }}>
-                      // explore my portfolio through a 2D space game
+                      {"// explore my portfolio through a 2D space game"}
                     </p>
                     <button className="btn-primary" onClick={() => setGameOpen(true)}>
                       ▶ play game

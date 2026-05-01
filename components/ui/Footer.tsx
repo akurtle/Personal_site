@@ -42,9 +42,9 @@ const Footer = () => {
       <footer>
         <div className="site-footer">
           <span className="footer-left">
-            //{" "}
+            {"// "}
             <span className="footer-name">Mirza Yousuf</span>
-            {" "}— built with curiosity
+            {" — built with curiosity"}
           </span>
           <span className="footer-right">© 2026</span>
         </div>

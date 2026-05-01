@@ -33,7 +33,7 @@ const Courses = () => {
                 </span>
               </p>
               <p className="term-comment">
-                // found {courses.length} results
+                {"// found "}{courses.length}{" results"}
               </p>
 
               <div>

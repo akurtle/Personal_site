@@ -1,4 +1,5 @@
 import { projects } from "@/data";
+import Image from "next/image";
 
 const RecentProjects = () => {
   return (
@@ -20,7 +21,7 @@ const RecentProjects = () => {
               rel="noopener noreferrer"
             >
               <div className="project-thumb">
-                <img src={img} alt={title} />
+                <Image src={img} alt={title} fill style={{ objectFit: "cover" }} />
               </div>
               <div className="project-meta">
                 <div className="project-name">{title}</div>
@@ -28,11 +29,13 @@ const RecentProjects = () => {
                 <div className="project-footer">
                   <div className="chip-wrap">
                     {iconLists.slice(0, 4).map((icon) => (
-                      <img
+                      <Image
                         key={icon}
-                        src={icon}
+                        src={icon.startsWith("./") ? icon.slice(1) : icon}
                         alt=""
-                        style={{ width: "20px", height: "20px", objectFit: "contain" }}
+                        width={20}
+                        height={20}
+                        style={{ objectFit: "contain" }}
                       />
                     ))}
                   </div>
