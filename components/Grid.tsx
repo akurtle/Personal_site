@@ -29,6 +29,8 @@ const CopyEmailBtn = () => {
 };
 
 const Grid = () => {
+  const [gameOpen, setGameOpen] = useState(false);
+
   return (
     <section id="about">
       <div className="section-inner">
@@ -145,44 +147,100 @@ const Grid = () => {
           </a>
         </div>
 
-        {/* Embedded game */}
-        <div style={{ marginTop: "24px", background: "var(--border)", borderRadius: "12px", overflow: "hidden" }}>
+        {/* Embedded game — Linux desktop */}
+        <div
+          style={{
+            marginTop: "24px",
+            borderRadius: "12px",
+            overflow: "hidden",
+            border: "1px solid rgba(255,255,255,0.07)",
+            backgroundImage: "url('/UbuntuMain.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "left center",
+          }}
+        >
+          {/* Ubuntu top panel — replaces bare wallpaper gap at top */}
           <div
             style={{
-              background: "var(--bg2)",
-              borderTop: "none",
+              background: "rgba(20,20,20,0.92)",
+              backdropFilter: "blur(4px)",
+              padding: "5px 16px",
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              borderBottom: "1px solid rgba(255,255,255,0.08)",
             }}
           >
+            <span style={{ fontFamily: "var(--sans)", fontSize: "12px", color: "#ccc" }}>Activities</span>
+            <span style={{ fontFamily: "var(--sans)", fontSize: "12px", color: "#ccc" }}>
+              {new Date().toLocaleDateString("en-CA", { weekday: "short", month: "short", day: "numeric" })}
+            </span>
+            <span style={{ fontSize: "12px", color: "#ccc" }}>⏻</span>
+          </div>
+
+          {/* Desktop area */}
+          <div style={{ padding: "24px 32px 32px", display: "flex", justifyContent: "center" }}>
+            {/* Linux window chrome */}
             <div
               style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "8px",
-                padding: "12px 16px",
-                background: "var(--bg3)",
-                borderTop: "1px solid var(--border)",
+                width: "min(100%, 640px)",
+                borderRadius: "8px",
+                overflow: "hidden",
+                boxShadow: "0 24px 64px rgba(0,0,0,0.8)",
+                border: "1px solid rgba(255,255,255,0.1)",
               }}
             >
-              <span className="term-dot term-dot-red" />
-              <span className="term-dot term-dot-yellow" />
-              <span className="term-dot term-dot-green" />
-              <span style={{ fontFamily: "var(--mono)", fontSize: "12px", color: "var(--text3)", marginLeft: "8px" }}>
-                kaboom.js — portfolio-game
-              </span>
-            </div>
-            <div style={{ aspectRatio: "1 / 1", width: "min(100%, 640px)", margin: "0 auto" }}>
-              <iframe
-                src="https://mirza-portfolio-game.vercel.app/"
-                title="Portfolio Game"
-                tabIndex={-1}
+              {/* Window title bar */}
+              <div
                 style={{
-                  width: "100%",
-                  height: "100%",
-                  border: "none",
-                  display: "block",
+                  background: "#2d2d2d",
+                  padding: "8px 12px",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "8px",
+                  userSelect: "none",
+                  borderBottom: "1px solid rgba(0,0,0,0.4)",
                 }}
-                allow="autoplay"
-              />
+              >
+                <span style={{ fontFamily: "var(--sans)", fontSize: "12px", color: "#ccc", flex: 1 }}>
+                  portfolio-game
+                </span>
+                <span style={{ width: "12px", height: "12px", borderRadius: "50%", background: "#f4bf75", display: "inline-block" }} />
+                <span style={{ width: "12px", height: "12px", borderRadius: "50%", background: "#ac4142", display: "inline-block" }} />
+              </div>
+
+              {/* Game area */}
+              <div style={{ aspectRatio: "1 / 1", position: "relative", background: "#000" }}>
+                {gameOpen ? (
+                  <iframe
+                    src="https://mirza-portfolio-game.vercel.app/"
+                    title="Portfolio Game"
+                    tabIndex={-1}
+                    style={{ width: "100%", height: "100%", border: "none", display: "block" }}
+                    allow="autoplay"
+                  />
+                ) : (
+                  <div
+                    style={{
+                      position: "absolute",
+                      inset: 0,
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      gap: "16px",
+                      background: "rgba(0,0,0,0.5)",
+                    }}
+                  >
+                    <p style={{ fontFamily: "var(--mono)", fontSize: "13px", color: "var(--text2)", margin: 0 }}>
+                      // explore my portfolio through a 2D space game
+                    </p>
+                    <button className="btn-primary" onClick={() => setGameOpen(true)}>
+                      ▶ play game
+                    </button>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
