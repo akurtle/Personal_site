@@ -147,6 +147,40 @@ const Grid = () => {
               read article →
             </span>
           </a>
+
+          {/* Certification */}
+          <a
+            className="bento-card bc-cert"
+            href="https://www.credly.com/badges/e3bf3fb6-d0ce-459d-a646-70f046604440/public_url"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none", display: "block" }}
+          >
+            <div className="card-label">certification</div>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "12px" }}>
+              <Image
+                src="/aws-cloud-practitioner.png"
+                alt="AWS Certified Cloud Practitioner badge"
+                width={56}
+                height={56}
+              />
+              <h3 className="card-title" style={{ fontSize: "14px", margin: 0 }}>
+                AWS Certified Cloud Practitioner
+              </h3>
+            </div>
+            <p className="card-sub" style={{ marginBottom: "12px" }}>
+              Amazon Web Services · Oct 2026
+            </p>
+            <span
+              style={{
+                fontFamily: "var(--mono)",
+                fontSize: "11px",
+                color: "var(--green)",
+              }}
+            >
+              verify on credly →
+            </span>
+          </a>
         </div>
 
         {/* Embedded game — Linux desktop */}
