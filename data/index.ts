@@ -89,6 +89,24 @@ export const navItems = [
       iconLists: ["./re.svg","/fastapi.svg","/supabase.svg","/googlegemini.svg"],
       link: "https://talkitout-ai-zeta.vercel.app/",
     },
+    {
+      id: 3,
+      title: "Improving BacTermFinder",
+      des: "Honours ML research: retrained BacTermFinder on 200-nt inputs for ~15% higher recall, and built a tree-based classifier (85% F1) for intrinsic vs Rho-dependent terminators",
+      img: "/bactermfinder.png",
+      imgClassName:"scale-100 rounded-xl",
+      iconLists: ["/python.svg"],
+      link: "https://github.com/akurtle/Improving-BacTermFinder",
+    },
+    {
+      id: 4,
+      title: "Realtime Code Rooms",
+      des: "A collaborative code editor built on Yjs + Hocuspocus with sandboxed code execution via Piston, running on AWS ECS Fargate behind an ALB with Firestore persistence",
+      img: "/realtime-editor.png",
+      imgClassName:"scale-100 rounded-xl",
+      iconLists: ["/aws.svg","/firebase.svg","/dock.svg"],
+      link: "https://www.realtimeeditor.xyz/",
+    },
   ];
 
   export const moreProjects = [
